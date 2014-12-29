@@ -129,7 +129,7 @@
         _thumbBackgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5+self.segmentedControl.thumbEdgeInset.left,
                                                                                   self.segmentedControl.thumbEdgeInset.top,
                                                                                   self.bounds.size.width-10-self.segmentedControl.thumbEdgeInset.left-self.segmentedControl.thumbEdgeInset.right,
-                                                                                  self.bounds.size.height)];
+                                                                                  self.bounds.size.height - self.segmentedControl.thumbEdgeInset.bottom)];
         _thumbBackgroundImageView.backgroundColor = [UIColor clearColor];
         [self insertSubview:_thumbBackgroundImageView atIndex:0];
         
