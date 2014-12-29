@@ -146,7 +146,7 @@
         [self invalidateIntrinsicContentSize];
     }
 
-    self.thumbHeight = self.thumb.backgroundImage ? self.thumb.backgroundImage.size.height : self.height - (self.thumbEdgeInset.top + self.thumbEdgeInset.bottom);
+    self.thumbHeight = self.height - (self.thumbEdgeInset.top + self.thumbEdgeInset.bottom);
 
     i = 0;
     self.thumbRects = [NSMutableArray new];
